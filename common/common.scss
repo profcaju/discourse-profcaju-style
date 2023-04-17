@@ -1,0 +1,97 @@
+// aumentar tamanho do logotipo
+.d-header #site-logo {
+    height: 4em;
+}
+// Esse ajuste é necessário para quando a tela for muito pequena,
+// os ícones do lado direito superior não atravanquem o logotipo quando no celular
+.d-header {
+    height: 100%;
+}
+
+// dá um highlight quando colocar o mouse sobre as categorias
+.category-list tbody tr:hover {
+  background: rgba(var(--primary-rgb), 0.025);
+  outline: 1px dashed var(--secondary-high);
+  outline-offset: 4px;
+  border-radius: 0 10px 10px 0;
+}
+//Pra deixar em volta da imagem da categoria mais liberado
+.category-logo.aspect-image {
+    margin: 0 !important;
+}
+//pra dar um highlight na lista de tópicos recentes na página /categories
+.latest-topic-list-item:hover {
+    box-shadow: -2px 0px 0px 0px var(--primary-medium), 2px 0px 0px 0px var(--primary-medium);
+}
+// é pra ser o highlight na linha da lista /recent
+tbody.topic-list-body tr:hover {
+    box-shadow: -2px 0px 0px 0px var(--primary-medium), 2px 0px 0px 0px var(--primary-medium);
+}
+
+
+// Esse aqui é pra colocar a borda em volta de cada post
+.onscreen-post .row:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: -6px;
+    right: -6px;
+    border-radius: 10px;
+    border: 1px solid rgba(var(--primary-rgb), 0.1);
+    pointer-events: none; // Necessário para poder interagir com os elementos internos
+}
+// borda de cada post com mouse sobre o item
+.onscreen-post .row:hover:after {
+    border: 1px solid rgba(var(--primary-rgb), 0.5);
+}
+
+// cabeçalho do topic-list para esconder a palavra se não houver espaço (evitando sobrepor os cabeçalhos)
+thead.topic-list-header th.topic-list-data {
+    overflow: hidden;
+}
+
+
+//Tem que ajustar ainda
+.spoiler-blurred {
+    border: 2px dashed var(--primary-high);
+    border-radius: 10px;
+    background-color: var(--primary-300);
+    filter: blur(0);
+    & > * {
+        filter: blur(0.5em);
+    }
+    &:after {
+        content: "Resposta";
+        position: absolute;
+        top: 0;
+        padding: 2px 6px;
+        background-color: var(--primary-300);
+        border-radius: 7px 0;
+        padding: 1px 10px;
+        border-right: 2px dashed var(--primary-high);
+        border-bottom: 2px dashed var(--primary-high);
+        font-family: Consolas, "Lucida Console", monospace;;
+        font-size: 14px;
+        font-weight: 900;
+        color: var(--primary-900);
+    }
+}
+
+
+
+#user-card.user-card {
+    // padding-top: 31px;
+    border: 3px solid var(--primary-400);
+    border-radius: 10px;    
+}
+.user-card-metadata-outlet.accepted-answers {
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid var(--primary-900);
+}
+
+.wrap.custom-search-banner-wrap {
+    color: var(--secondary);
+}

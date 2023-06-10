@@ -10,10 +10,10 @@
 
 // dá um highlight quando colocar o mouse sobre as categorias
 .category-list tbody tr:hover {
-  background: rgba(var(--primary-rgb), 0.025);
-  outline: 1px dashed var(--secondary-high);
-  outline-offset: 4px;
-  border-radius: 0 10px 10px 0;
+    background: rgba(var(--primary-rgb), 0.025);
+    outline: 1px dashed var(--secondary-high);
+    outline-offset: 4px;
+    border-radius: 0 10px 10px 0;
 }
 //Pra deixar em volta da imagem da categoria mais liberado
 .category-logo.aspect-image {
@@ -21,17 +21,18 @@
 }
 //pra dar um highlight na lista de tópicos recentes na página /categories
 .latest-topic-list-item:hover {
-    box-shadow: -2px 0px 0px 0px var(--primary-medium), 2px 0px 0px 0px var(--primary-medium);
+    box-shadow: -2px 0px 0px 0px var(--primary-medium),
+        2px 0px 0px 0px var(--primary-medium);
 }
 // é pra ser o highlight na linha da lista /recent
 tbody.topic-list-body tr:hover {
-    box-shadow: -2px 0px 0px 0px var(--primary-medium), 2px 0px 0px 0px var(--primary-medium);
+    box-shadow: -2px 0px 0px 0px var(--primary-medium),
+        2px 0px 0px 0px var(--primary-medium);
 }
-
 
 // Esse aqui é pra colocar a borda em volta de cada post
 .onscreen-post .row:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 6px;
@@ -52,7 +53,6 @@ thead.topic-list-header th.topic-list-data {
     overflow: hidden;
 }
 
-
 //Tem que ajustar ainda
 .spoiler-blurred {
     border: 2px dashed var(--primary-high);
@@ -72,19 +72,17 @@ thead.topic-list-header th.topic-list-data {
         padding: 1px 10px;
         border-right: 2px dashed var(--primary-high);
         border-bottom: 2px dashed var(--primary-high);
-        font-family: Consolas, "Lucida Console", monospace;;
+        font-family: Consolas, "Lucida Console", monospace;
         font-size: 14px;
         font-weight: 900;
         color: var(--primary-900);
     }
 }
 
-
-
 #user-card.user-card {
     // padding-top: 31px;
     border: 3px solid var(--primary-400);
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 .user-card-metadata-outlet.accepted-answers {
     background-color: orange;
@@ -94,4 +92,12 @@ thead.topic-list-header th.topic-list-data {
 
 .wrap.custom-search-banner-wrap {
     color: var(--secondary);
+}
+
+// arrumar MD Topic List para o avatar da última msg aparecer corretamente
+.topic-list .last-post .poster-info {
+    width: calc(100% - 70px);
+}
+.topic-list .last-post .poster-avatar {
+    margin-top: 0;
 }

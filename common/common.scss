@@ -96,8 +96,8 @@ thead.topic-list-header th.topic-list-data {
 
 // arrumar MD Topic List para o avatar da última msg aparecer corretamente
 .topic-list .last-post .poster-info {
-    width: calc(100% - 70px);
+    width: calc(100% - 70px) !important;
 }
 .topic-list .last-post .poster-avatar {
-    margin-top: 0;
+    margin-top: 0 !important;
 }

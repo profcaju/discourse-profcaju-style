@@ -88,6 +88,15 @@ thead.topic-list-header th.topic-list-data {
     background-color: orange;
     border-radius: 5px;
     border: 2px solid var(--primary-900);
+    padding: 0 5px;
+}
+.user-card-metadata-outlet.accepted-answers h3 .desc {
+    color: whitesmoke;
+    font-weight: bold;
+}
+.user-card-metadata-outlet.accepted-answers h3 {
+    color: white;
+    font-weight: bolder;
 }
 
 .wrap.custom-search-banner-wrap {

@@ -98,6 +98,12 @@ thead.topic-list-header th.topic-list-data {
     color: white;
     font-weight: bolder;
 }
+.user-card-avatar img.avatar {
+    background-color: whitesmoke;
+}
+#user-card .card-content {
+    border-radius: 7px;
+}
 
 .wrap.custom-search-banner-wrap {
     color: var(--secondary);

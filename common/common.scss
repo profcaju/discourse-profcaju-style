@@ -104,6 +104,11 @@ thead.topic-list-header th.topic-list-data {
 #user-card .card-content {
     border-radius: 7px;
 }
+.user-card-metadata-outlet.accepted-answers {
+    position: absolute;
+    top: 10px;
+    right: 4px;
+}
 
 .wrap.custom-search-banner-wrap {
     color: var(--secondary);
